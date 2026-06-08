@@ -1,0 +1,257 @@
+/*! custom.css v1.0 */
+
+/* ==========================================================================
+
+   Custom CSS Stylesheet. This is where you should add your own styles!
+
+   ========================================================================== */
+
+/*
+* Simple style overrides or custom adds
+*/
+
+.some-css-selector {font-size:13px;}
+
+.logo-container.hasInfoCard:before {
+   display: none;
+}
+
+.main-nav > ul > li > a {
+	color: #333;
+}
+
+.site-header {
+    background: #fff;
+}
+
+.site-header .kl-header-toptext {
+    color: #333333;
+}
+
+.site-header .social-icons.topnav.sc--clean > li > a {
+    color: #333;
+}
+
+.site-header .kl-header-toptext a {
+    color: #333;
+}
+
+.topnav > li > a {
+    color: #333;
+}
+
+.icon-white {
+    color: #6b6b6b;
+}
+
+.site-logo img {
+    max-height: 100px !important;
+    margin-bottom: 10px;
+}
+
+.site-header.style1 .main-nav {
+    position: relative;
+    top: 28px;
+}
+
+.site-header .separator {
+    background: #2b2b2b;
+}
+
+a#ctabutton {
+    right: 14px;
+    top: 18px;
+}
+
+.site-logo a {
+    padding: 7px;
+    background: #fff;
+}
+
+.zn-res-trigger::after {
+    background: #da4343;
+    box-shadow: 0 8px 0 #da4343,0 16px 0 #da4343;
+}
+
+.kl-slideshow.iosslider-slideshow.uh_light_gray.maskcontainer--shadow_ud.iosslider--custom-height.scrollme.kl-slider-loaded {
+    margin-top: 110px;
+}
+
+
+.kl-ioscaption--style4 .main_title {
+    margin-bottom: 42px;
+}
+
+.kl-ioscaption--style4.klios-alignright .main_title::before {
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.68) 60%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(60%,rgba(0, 0, 0, 0.68)));
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0, 0, 0, 0.68) 60%);
+    background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0, 0, 0, 0.68) 60%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0, 0, 0, 0.68) 60%);
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0, 0, 0, 0.68) 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#40000000',GradientType=1 );
+}
+
+#footer {
+    background: #363636;
+    border-top: 0px;
+}
+
+.lista-nosotros li {
+    font-size: 22px;
+    letter-spacing: 1px;
+    width: 75%;
+    text-align: left;
+    text-decoration: none !important;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #b63431;
+}
+
+/*.lista-nosotros li:before {
+    content: "-";
+    display: block;
+    float: left;
+    line-height: 73px;
+    margin-right: 20px;
+    font-size: 22px;
+}
+.lista-nosotros li:last-child:before {
+  line-height: 50px;
+
+}*/
+ul.lista-nosotros {
+    margin-top: 15px;
+}
+
+h1.titulo-galeria {
+    text-align: center;
+    width: 100%;
+    display: block;
+    border: 6px solid rgb(182, 52, 49);
+    padding: 25px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+    background: #f8403d;
+    background: -webkit-linear-gradient(#fb817f, #f8403d);
+    background: -o-linear-gradient(#fb817f, #f8403d);
+    background: -moz-linear-gradient(#fb817f, #f8403d);
+    background: linear-gradient(#fb817f, #f8403d);
+    color: rgba(255, 255, 255, 0.92);
+    border-radius: 8px;
+}
+
+.caja-contenido {
+    margin-top: 200px;
+    width: 70%;
+    float: right;
+    overflow: visible;
+}
+
+.caja-contenido p, .caja-contenido2 p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+h1.titulo-servi {
+    text-transform: uppercase;
+}
+
+.titulo-servi span {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+img.ico-servi1 {
+    float: right;
+    margin-top: -38px;
+    margin-left: 10px;
+}
+
+img.imagen-remodelacion2 {
+    position: relative;
+    left: 120px;
+    float: right;
+    margin-top: 63px;
+    overflow: visible;
+    box-shadow: -18px 20px 50px rgba(0, 0, 0, 0.4);
+    max-width: 75%;
+}
+
+.caja-contenido2 {
+    margin-top: 200px;
+    width: 70%;
+    float: left;
+    overflow: visible;
+}
+
+img.imagen-remodelacion1 {
+    position: relative;
+    left: 120px;
+    float: right;
+    margin-top: 38px;
+    overflow: visible;
+    box-shadow: -18px 20px 50px rgba(0, 0, 0, 0.4);
+    max-width: 75%;
+}
+/* ==========================================================================
+   ** Responsive styles custom rules
+   * These rules are ready to be used for either overrides
+   * or just your own custom rules.
+   ========================================================================== */
+
+@media only screen and (min-width : 1921px){
+
+}
+
+@media only screen and (max-width : 1440px){
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1440px){
+
+}
+
+@media only screen and (min-width : 1200px){
+
+}
+
+@media only screen and (max-width: 1199px){
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media only screen and (min-width: 992px){
+
+
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 320px) {
+
+}
+
