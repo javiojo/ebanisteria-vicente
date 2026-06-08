@@ -330,71 +330,39 @@
        
        <section class="ptop-60 pbottom-60">
        	<div class="container">
-       		<div style="background: #fff;border-radius: 8px;box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3); padding: 30px;" class="row">
-       			<div class="col-md-12">
+       		<div style="background:#fff;border-radius:8px;box-shadow:0px 5px 12px rgba(0,0,0,0.3);padding:30px;" class="row">
+       			<div class="col-md-12" style="text-align:center;">
 
-       				<!-- Self-hosted lightbox gallery -->
-       				<div id="ev-gallery" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
-       					<a href="images/galeria-1.jpg" data-lightbox="galeria" class="ev-thumb"><img src="images/galeria-1.jpg" alt="Galería 1"></a>
-       					<a href="images/galeria-2.jpg" data-lightbox="galeria" class="ev-thumb"><img src="images/galeria-2.jpg" alt="Galería 2"></a>
-       					<a href="images/galeria-3.jpg" data-lightbox="galeria" class="ev-thumb"><img src="images/galeria-3.jpg" alt="Galería 3"></a>
-       					<a href="images/galeria-4.jpg" data-lightbox="galeria" class="ev-thumb"><img src="images/galeria-4.jpg" alt="Galería 4"></a>
-       					<a href="images/galeria-5.jpg" data-lightbox="galeria" class="ev-thumb"><img src="images/galeria-5.jpg" alt="Galería 5"></a>
-       					<a href="images/galeria-6.jpg" data-lightbox="galeria" class="ev-thumb"><img src="images/galeria-6.jpg" alt="Galería 6"></a>
-       					<a href="images/galeria-7.jpg" data-lightbox="galeria" class="ev-thumb"><img src="images/galeria-7.jpg" alt="Galería 7"></a>
-       					<a href="images/galeria-8.jpg" data-lightbox="galeria" class="ev-thumb"><img src="images/galeria-8.jpg" alt="Galería 8"></a>
-       					<a href="images/galeria-9.jpg" data-lightbox="galeria" class="ev-thumb"><img src="images/galeria-9.jpg" alt="Galería 9"></a>
-       					<a href="images/galeria-10.jpg" data-lightbox="galeria" class="ev-thumb"><img src="images/galeria-10.jpg" alt="Galería 10"></a>
-       				</div>
+       				<p style="margin-bottom:20px;color:#555;font-size:15px;">
+       					Visita nuestra página de Facebook para ver todos nuestros álbumes de fotos.
+       				</p>
 
-       				<style>
-       					.ev-thumb { display:inline-block; }
-       					.ev-thumb img { width:280px; height:200px; object-fit:cover; border-radius:4px; transition:opacity .2s; }
-       					.ev-thumb img:hover { opacity:0.85; cursor:pointer; }
-
-       					/* Lightbox overlay */
-       					#ev-lightbox { display:none; position:fixed; top:0;left:0;width:100%;height:100%; background:rgba(0,0,0,0.88); z-index:9999; align-items:center; justify-content:center; }
-       					#ev-lightbox.active { display:flex; }
-       					#ev-lightbox img { max-width:90vw; max-height:88vh; border-radius:4px; box-shadow:0 4px 30px rgba(0,0,0,0.5); }
-       					#ev-lb-close { position:absolute; top:20px; right:30px; color:#fff; font-size:36px; cursor:pointer; line-height:1; }
-       					#ev-lb-prev, #ev-lb-next { position:absolute; top:50%; transform:translateY(-50%); color:#fff; font-size:48px; cursor:pointer; user-select:none; padding:0 20px; }
-       					#ev-lb-prev { left:10px; }
-       					#ev-lb-next { right:10px; }
-       				</style>
-
-       				<!-- Lightbox markup -->
-       				<div id="ev-lightbox">
-       					<span id="ev-lb-close">&times;</span>
-       					<span id="ev-lb-prev">&#8249;</span>
-       					<img id="ev-lb-img" src="" alt="">
-       					<span id="ev-lb-next">&#8250;</span>
-       				</div>
-
-       				<script>
-       					(function(){
-       						var imgs = Array.from(document.querySelectorAll('[data-lightbox="galeria"]'));
-       						var lb = document.getElementById('ev-lightbox');
-       						var lbImg = document.getElementById('ev-lb-img');
-       						var cur = 0;
-
-       						function open(i){ cur=i; lbImg.src=imgs[i].href; lb.classList.add('active'); }
-       						function close(){ lb.classList.remove('active'); lbImg.src=''; }
-
-       						imgs.forEach(function(a,i){
-       							a.addEventListener('click',function(e){ e.preventDefault(); open(i); });
-       						});
-       						document.getElementById('ev-lb-close').addEventListener('click', close);
-       						document.getElementById('ev-lb-prev').addEventListener('click',function(){ open((cur-1+imgs.length)%imgs.length); });
-       						document.getElementById('ev-lb-next').addEventListener('click',function(){ open((cur+1)%imgs.length); });
-       						lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
-       						document.addEventListener('keydown',function(e){
-       							if(!lb.classList.contains('active')) return;
-       							if(e.key==='Escape') close();
-       							if(e.key==='ArrowLeft') open((cur-1+imgs.length)%imgs.length);
-       							if(e.key==='ArrowRight') open((cur+1)%imgs.length);
-       						});
-       					})();
+       				<!-- Facebook Page Plugin -->
+       				<div id="fb-root"></div>
+       				<script async defer crossorigin="anonymous"
+       					src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v18.0">
        				</script>
+       				<div class="fb-page"
+       					data-href="https://www.facebook.com/profile.php?id=100064313574645"
+       					data-tabs="timeline"
+       					data-width="900"
+       					data-height="700"
+       					data-small-header="false"
+       					data-adapt-container-width="true"
+       					data-hide-cover="false"
+       					data-show-facepile="false">
+       					<blockquote cite="https://www.facebook.com/profile.php?id=100064313574645" class="fb-xfbml-parse-ignore">
+       						<a href="https://www.facebook.com/profile.php?id=100064313574645">Ebanistería Vicente</a>
+       					</blockquote>
+       				</div>
+
+       				<div style="margin-top:25px;">
+       					<a href="https://www.facebook.com/profile.php?id=100064313574645&sk=photos_albums"
+       					   target="_blank"
+       					   style="background:#3b5998;color:#fff;padding:12px 28px;text-decoration:none;border-radius:4px;font-weight:700;font-size:14px;letter-spacing:.5px;">
+       						&#128247; Ver todos los álbumes en Facebook
+       					</a>
+       				</div>
 
        			</div>
        		</div>
