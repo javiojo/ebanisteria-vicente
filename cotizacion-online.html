@@ -350,9 +350,9 @@
 .ev-form .ev-success { display:none; background:#d4edda; color:#155724; border:1px solid #c3e6cb; padding:14px; border-radius:4px; margin-bottom:20px; }
 </style>
 <div class="ev-success" id="ev-quote-success">¡Cotización enviada! Le contactaremos a la brevedad.</div>
-<form class="ev-form" action="https://formspree.io/f/xpwzgnjk" method="POST" id="ev-quote-form">
-    <input type="hidden" name="_subject" value="Nueva cotización - Ebanistería Vicente">
-    <input type="hidden" name="_next" value="https://ebanisteriavicente.com/cotizacion-online.html?sent=1">
+<form class="ev-form" action="https://api.web3forms.com/submit" method="POST" id="ev-quote-form">
+    <input type="hidden" name="access_key" value="a19f409e-afca-4a5a-ba4f-a3aee54d30d0">
+    <input type="hidden" name="subject" value="Nueva cotización - Ebanistería Vicente">
     <div class="row">
         <div class="col-sm-6 kl-fancy-form">
             <label>Nombre</label>
