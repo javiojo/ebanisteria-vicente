@@ -308,15 +308,23 @@
 .ev-form .kl-fancy-form { margin-bottom: 18px; }
 .ev-form input[type=text], .ev-form input[type=email], .ev-form input[type=tel], .ev-form textarea, .ev-form select {
     width:100%; padding:12px 14px; border:1px solid #ddd; border-radius:4px;
-    font-size:14px; font-family:inherit; box-sizing:border-box; transition:border .2s;
+    font-size:14px; font-family:'Open Sans', sans-serif; box-sizing:border-box; transition:border .2s;
 }
-.ev-form input:focus, .ev-form textarea:focus, .ev-form select:focus { border-color:#c0392b; outline:none; }
-.ev-form label { display:block; font-size:12px; font-weight:600; color:#555; margin-bottom:5px; text-transform:uppercase; letter-spacing:.5px; }
+.ev-form input:focus, .ev-form textarea:focus, .ev-form select:focus { border-color:#cd2122; outline:none; }
+.ev-form label { display:block; font-size:11px; font-weight:700; color:#333; margin-bottom:5px; text-transform:uppercase; letter-spacing:.8px; font-family:'Open Sans', sans-serif; }
 .ev-form textarea { resize:vertical; min-height:120px; }
-.ev-form .btn-send { background:#c0392b; color:#fff; border:none; padding:13px 32px; font-size:14px; font-weight:700; letter-spacing:1px; border-radius:3px; cursor:pointer; text-transform:uppercase; }
-.ev-form .btn-send:hover { background:#a93226; }
-.ev-form .ev-success { display:none; background:#d4edda; color:#155724; border:1px solid #c3e6cb; padding:14px; border-radius:4px; margin-bottom:20px; }
+.ev-form .btn-send { background:#cd2122; color:#fff; border:none; padding:13px 32px; font-size:14px; font-weight:700; letter-spacing:1px; border-radius:3px; cursor:pointer; text-transform:uppercase; font-family:'Montserrat', sans-serif; }
+.ev-form .btn-send:hover { background:#a81a1b; }
+.ev-form .ev-success { display:none; background:#d4edda; color:#155724; border:1px solid #c3e6cb; padding:14px; border-radius:4px; margin-bottom:20px; font-family:'Open Sans', sans-serif; }
 </style>
+<script>
+if(window.location.search.indexOf('sent=1') !== -1){
+    document.addEventListener('DOMContentLoaded', function(){
+        var s = document.querySelector('.ev-success');
+        if(s){ s.style.display='block'; }
+    });
+}
+</script>
 <div class="ev-success" id="ev-contact-success">¡Mensaje enviado! Nos pondremos en contacto pronto.</div>
 <form class="ev-form" action="https://api.web3forms.com/submit" method="POST" id="ev-contact-form">
     <input type="hidden" name="access_key" value="a19f409e-afca-4a5a-ba4f-a3aee54d30d0">
